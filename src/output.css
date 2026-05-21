@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -177,6 +178,12 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
+  .mt-\[40px\] {
+    margin-top: 40px;
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
   .mt-\[80px\] {
     margin-top: 80px;
   }
@@ -186,11 +193,20 @@
   .mb-\[10px\] {
     margin-bottom: 10px;
   }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+  .mb-\[40px\] {
+    margin-bottom: 40px;
+  }
   .ml-\[20px\] {
     margin-left: 20px;
   }
   .ml-\[30px\] {
     margin-left: 30px;
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
@@ -213,6 +229,12 @@
   .h-\[180px\] {
     height: 180px;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[210px\] {
+    height: 210px;
+  }
   .h-\[250px\] {
     height: 250px;
   }
@@ -221,6 +243,12 @@
   }
   .h-\[500px\] {
     height: 500px;
+  }
+  .h-\[670px\] {
+    height: 670px;
+  }
+  .h-\[1100px\] {
+    height: 1100px;
   }
   .h-\[1200px\] {
     height: 1200px;
@@ -249,6 +277,9 @@
   .max-w-\[1300px\] {
     max-width: 1300px;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -258,11 +289,17 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-\[10px\] {
     gap: 10px;
   }
   .gap-\[20px\] {
     gap: 20px;
+  }
+  .rounded-\[5px\] {
+    border-radius: 5px;
   }
   .rounded-\[10px\] {
     border-radius: 10px;
@@ -298,6 +335,9 @@
   .bg-\[\#212731\] {
     background-color: #212731;
   }
+  .bg-\[\#2127310D\] {
+    background-color: #2127310D;
+  }
   .bg-\[\#D7B18D\] {
     background-color: #D7B18D;
   }
@@ -307,11 +347,17 @@
   .bg-\[white\] {
     background-color: white;
   }
+  .p-\[5px\] {
+    padding: 5px;
+  }
   .p-\[10px\] {
     padding: 10px;
   }
   .p-\[12px\] {
     padding: 12px;
+  }
+  .p-\[15px\] {
+    padding: 15px;
   }
   .p-\[20px\] {
     padding: 20px;
@@ -328,11 +374,17 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
   .text-\[30px\] {
     font-size: 30px;
   }
   .text-\[40px\] {
     font-size: 40px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -344,6 +396,15 @@
   .text-\[\#212731\] {
     color: #212731;
   }
+  .text-\[\#808080b9\] {
+    color: #808080b9;
+  }
+  .text-\[black\] {
+    color: black;
+  }
+  .text-\[gray\] {
+    color: gray;
+  }
   .text-\[green\] {
     color: green;
   }
@@ -352,6 +413,9 @@
   }
   .text-\[white\] {
     color: white;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .lg\:mt-\[1px\] {
     @media (width >= 64rem) {
@@ -363,9 +427,34 @@
       display: flex;
     }
   }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
+  .lg\:h-\[100\%\] {
+    @media (width >= 64rem) {
+      height: 100%;
+    }
+  }
+  .lg\:h-\[100px\] {
+    @media (width >= 64rem) {
+      height: 100px;
+    }
+  }
   .lg\:h-\[200px\] {
     @media (width >= 64rem) {
       height: 200px;
+    }
+  }
+  .lg\:h-\[300px\] {
+    @media (width >= 64rem) {
+      height: 300px;
+    }
+  }
+  .lg\:h-\[400px\] {
+    @media (width >= 64rem) {
+      height: 400px;
     }
   }
   .lg\:h-\[500px\] {
@@ -383,6 +472,16 @@
       width: 50%;
     }
   }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
+  .lg\:w-\[390px\] {
+    @media (width >= 64rem) {
+      width: 390px;
+    }
+  }
   .lg\:w-\[400px\] {
     @media (width >= 64rem) {
       width: 400px;
@@ -391,6 +490,11 @@
   .lg\:w-\[550px\] {
     @media (width >= 64rem) {
       width: 550px;
+    }
+  }
+  .lg\:flex-nowrap {
+    @media (width >= 64rem) {
+      flex-wrap: nowrap;
     }
   }
   .lg\:items-center {
@@ -411,6 +515,11 @@
   .lg\:p-\[0px\] {
     @media (width >= 64rem) {
       padding: 0px;
+    }
+  }
+  .lg\:text-start {
+    @media (width >= 64rem) {
+      text-align: start;
     }
   }
   .lg\:text-\[50px\] {
